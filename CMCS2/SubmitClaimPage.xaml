@@ -1,0 +1,42 @@
+﻿<Page x:Class="CMCS2.SubmitClaimPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Submit Claim">
+
+    
+
+    <StackPanel Margin="20">
+        <TextBlock Text="Lecturer Name" FontWeight="Bold" />
+        <TextBox Name="LecturerNameTextBox" Width="200" Margin="0,10,0,10" />
+
+        <TextBlock Text="Lecturer ID:" />
+        <TextBox x:Name="LecturerIDTextBox" Width="200" />
+
+        <TextBlock Text="Claim Type:" />
+        <ComboBox x:Name="ClaimTypeComboBox" Width="200">
+            <ComboBoxItem Content="Travel-Fess" />
+            <ComboBoxItem Content="Work-place injury" />
+            <ComboBoxItem Content="Business expenses" />
+            <ComboBoxItem Content="Other" />
+        </ComboBox>
+
+        <TextBlock Text="Claim Description:" />
+        <TextBox x:Name="ClaimDescriptionTextBox" Width="200" Height="100" TextWrapping="Wrap" AcceptsReturn="True" />
+
+        <TextBlock Text="Hours Worked" FontWeight="Bold" />
+        <TextBox Name="HoursWorkedTextBox" Width="200" Margin="0,10,0,10" />
+
+        <TextBlock Text="Hourly Rate" FontWeight="Bold" />
+        <TextBox Name="HourlyRateTextBox" Width="200" Margin="0,10,0,10" />
+
+        <TextBlock Text="Additional Notes" FontWeight="Bold" />
+        <TextBox Name="AdditionalNotesTextBox" Width="200" Height="60" TextWrapping="Wrap" AcceptsReturn="True" Margin="0,10,0,10"/>
+
+        <TextBlock Text="Upload Supporting Document" FontWeight="Bold" />
+        <Button Content="Browse" Click="UploadFile_Click" />
+        <TextBlock Name="FileNameTextBlock" Text="No file selected" Margin="0,10,0,10" />
+
+        <Button Content="Submit Claim" Click="SubmitClaim_Click" Width="150"/>
+
+    </StackPanel>
+</Page>
