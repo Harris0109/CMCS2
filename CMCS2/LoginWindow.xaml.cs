@@ -38,7 +38,7 @@ namespace CMCS2
             {
                 // Login successful, open AdminPage
                 AdminPage adminPage = new AdminPage();
-                this.Content = adminPage;
+                this.Content = adminPae;
                  // Close the login window
             }
             else
